@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title>e药网，便捷B2B医药网站</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <div class="w">
+            <ul class="keywords-list">
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?categoryId=100001">中西药品</a>|
+                    <a class="link" target="_blank" href="./list.html?keyword=中药">中药</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=西药">西药</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?categoryId=100002">滋补保健</a>|
+                    <a class="link" target="_blank" href="./list.html?keyword=男士保健">男士保健</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=女士保养">女士保养</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?categoryId=100003">维生素钙</a>|
+                    <a class="link" target="_blank" href="./list.html?keyword=维生素">维生素</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=钙片">钙片</a> 
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?categoryId=100004">隐形眼镜</a>|
+                    <a class="link" target="_blank" href="./list.html?keyword=老花眼镜">老花眼镜</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=眼镜护理">眼镜护理</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?categoryId=100005">医疗器械</a>|
+                    <a class="link" target="_blank" href="./list.html?keyword=检测器材">检测器材</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=健康电器">健康电器</a>
+                  
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?categoryId=100032">药妆个护</a>|
+                    <a class="link" target="_blank" href="./list.html?keyword=中药">专业药妆</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=中药">个人洗护</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?categoryId=100033">母婴专区</a>|
+                    <a class="link" target="_blank" href="./list.html?keyword=喂养用品">喂养用品</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=孕妈专用">孕妈专用</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?categoryId=100034">中药食材</a>|
+                    <a class="link" target="_blank" href="./list.html?keyword=养生饮茶">养生饮茶</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=休闲零食">休闲零食</a>
+                </li>
+              
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?categoryId=100039">两性用品</a>|
+                    <a class="link" target="_blank" href="./list.html?keyword=避孕用品">避孕用品</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=排卵验孕">排卵/验孕</a>
+                </li>
+            </ul>
+            <div class="banner-con">
+                <div class="loading"></div>
+            </div>
+        </div>
+        <div class="w">
+            <div class="floor-wrap">
+                <h1 class="floor-title">经销商排名</h1>
+                <ul class="floor-list">
+                    <li class="sale-item">
+                        <a href="./list.html?categoryId=100006">
+                            <img class="sale-img" src="<%= require('../image/floor/01.jpg') %>" alt="经销商01" />
+                        </a>
+                    </li>
+                    <li class="sale-item">
+                        <a href="./list.html?categoryId=100007">
+
+                            <img class="sale-img" src="<%= require('../image/floor/02.jpg') %>" alt="经销商02" />
+                        </a>
+                    </li>
+                    <li class="sale-item">
+                        <a href="./list.html?categoryId=100008">
+
+                            <img class="sale-img" src="<%= require('../image/floor/03.jpg') %>" alt="经销商03" />
+                        </a>
+                    </li>
+                    <li class="sale-item">
+                        <a href="./list.html?categoryId=100009">
+
+                            <img class="sale-img" src="<%= require('../image/floor/04.jpg') %>" alt="经销商04" />
+                        </a>
+                    </li>
+                    <li class="sale-item">
+                        <a href="./list.html?categoryId=100010">
+
+                            <img class="sale-img" src="<%= require('../image/floor/05.jpg') %>" alt="经销商05" />
+                        </a>
+                    </li>
+                    <li class="sale-item">
+                        <a href="./list.html?categoryId=100010">
+
+                            <img class="sale-img" src="<%= require('../image/floor/06.jpg') %>" alt="经销商06" />
+                        </a>
+                    </li>
+                    <li class="sale-item">
+                        <a href="./list.html?categoryId=100010">
+
+                            <img class="sale-img" src="<%= require('../image/floor/07.jpg') %>" alt="经销商07" />
+                        </a>
+                    </li>                                                   
+                </ul>
+            <div class="floor-wrap">
+                <h1 class="floor-title">F1 家庭常备药</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=复方金银花颗粒">
+                            <span class="floor-text">复方金银花颗粒</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor1-1.jpg') %>" alt="方金银花颗粒" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=连花清瘟胶囊">
+                            <span class="floor-text">连花清瘟胶囊</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor1-2.jpg') %>" alt="连花清瘟胶囊" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=小柴胡颗粒">
+                            <span class="floor-text">小柴胡颗粒</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor1-3.jpg') %>" alt="小柴胡颗粒" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=达克宁">
+                            <span class="floor-text">达克宁</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor1-4.jpg') %>" alt="达克宁" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=风油精">
+                            <span class="floor-text">风油精</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor1-5.jpg') %>" alt="风油精" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">F2 专科用药</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=益安宁丸">
+                            <span class="floor-text">益安宁丸</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor2-1.jpg') %>" alt="益安宁丸" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=莎普爱思">
+                            <span class="floor-text">莎普爱思</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor2-2.jpg') %>" alt="莎普爱思" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=他克莫斯软膏">
+                            <span class="floor-text">他克莫斯软膏</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor2-3.jpg') %>" alt="他克莫斯软膏" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=舒筋健腰丸">
+                            <span class="floor-text">舒筋健腰丸</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor2-4.jpg') %>" alt="舒筋健腰丸" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=气血和">
+                            <span class="floor-text">气血和</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor2-5.jpg') %>" alt="气血和" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">F3 滋润保健</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=东阿阿胶">
+                            <span class="floor-text">东阿阿胶</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor3-1.jpg') %>" alt="东阿阿胶" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=六味地黄丸">
+                            <span class="floor-text">六味地黄丸</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor3-2.jpg') %>" alt="六味地黄丸" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=汤臣倍健液体钙">
+                            <span class="floor-text">汤臣倍健液体钙</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor3-3.jpg') %>" alt="汤成倍健液体钙" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=鱼肝油">
+                            <span class="floor-text">鱼肝油</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor3-4.jpg') %>" alt="鱼肝油" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=美澳健天然维生素E">
+                            <span class="floor-text">美澳健天然维生素E</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor3-5.jpg') %>" alt="美澳健天然维生素E" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">F4 母婴用品</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=婴儿健脾散">
+                            <span class="floor-text">婴儿健脾散</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor4-1.jpg') %>" alt="婴儿健脾散" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=婴儿紫草膏">
+                            <span class="floor-text">婴儿紫草膏</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor4-2.jpg') %>" alt="婴儿紫草膏" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=龙牡壮骨颗粒">
+                            <span class="floor-text">龙牡壮骨颗粒</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor4-3.jpg') %>" alt="龙牡壮骨颗粒" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=雀巢妈妈奶粉">
+                            <span class="floor-text">雀巢妈妈奶粉</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor4-4.jpg') %>" alt="雀巢妈妈奶粉" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=雅培幼儿奶粉">
+                            <span class="floor-text">雅培幼儿奶粉</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor4-5.jpg') %>" alt="雅培幼儿奶粉" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">F5 药妆个护</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=妇炎洁">
+                            <span class="floor-text">妇炎洁</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor5-1.jpg') %>" alt="妇炎洁" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=完美芦荟胶">
+                            <span class="floor-text">完美芦荟胶</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor5-2.jpg') %>" alt="完美芦荟胶" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=知医堂健发">
+                            <span class="floor-text">知医堂健发</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor5-3.jpg') %>" alt="知医堂健发" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=云南白药牙膏">
+                            <span class="floor-text">云南白药牙膏</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor5-4.jpg') %>" alt="云南白药牙膏" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?keyword=狮王祛痘膏">
+                            <span class="floor-text">狮王祛痘膏</span>
+                            <img class="floor-img" src="<%= require('../image/floor/floor5-5.jpg') %>" alt="狮王祛痘膏" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>
