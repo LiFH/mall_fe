@@ -26,7 +26,7 @@ var nav = {
         });
         $('.js-login1').click(function(){
            //window.location.href = './user-register.html';
-           window.location.href="http://admin.lifh.xin/#/login"
+           window.location.href="http://admin.lifh.xin/#/login";
 
         });
         $('.js-login2').click(function(){
