@@ -11,7 +11,7 @@ import Order        from 'service/order.jsx';
 import './detail.scss';
 
 const _mm           = new MMUtile();
-const _order        = new Order();
+
 
 
 const OrderDetail = React.createClass({
@@ -54,7 +54,7 @@ const OrderDetail = React.createClass({
                     <div className="form-wrap col-lg-12">
                         <div className="form-horizontal">
                             <div className="form-group">
-                                <label htmlFor="name" className="col-md-2 control-label">订单号：</label>
+                                <label htmlFor="name" className="col-md-2 control-label">评论ID：</label>
                                 <div className="col-md-5">
                                     <p type="text" className="form-control-static">{this.state.orderInfo.orderNo}</p>
                                 </div>
@@ -66,19 +66,13 @@ const OrderDetail = React.createClass({
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="subtitle" className="col-md-2 control-label">收件人：</label>
+                                <label htmlFor="subtitle" className="col-md-2 control-label">评论人：</label>
                                 <div className="col-md-5">
-                                    <p type="text" className="form-control-static">
-                                        {this.state.orderInfo.receiverName}，
-                                        {receiverInfo.receiverProvince} 
-                                        {receiverInfo.receiverCity}，
-                                        {receiverInfo.receiverAddress}，
-                                        {receiverInfo.receiverPhone}
-                                    </p>
+                                  
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="subtitle" className="col-md-2 control-label">订单状态：</label>
+                                <label htmlFor="subtitle" className="col-md-2 control-label">商品ID：</label>
                                 <div className="col-md-5">
                                     <p type="text" className="form-control-static">
                                         {this.state.orderInfo.statusDesc}
@@ -92,47 +86,18 @@ const OrderDetail = React.createClass({
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="subtitle" className="col-md-2 control-label">支付方式：</label>
+                                <label htmlFor="subtitle" className="col-md-2 control-label">评论内容：</label>
                                 <div className="col-md-5">
                                     <p type="text" className="form-control-static">{this.state.orderInfo.paymentTypeDesc}</p>
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="subtitle" className="col-md-2 control-label">订单金额：</label>
+                                <label htmlFor="subtitle" className="col-md-2 control-label">评审状态：</label>
                                 <div className="col-md-5">
-                                    <p type="text" className="form-control-static">￥{this.state.orderInfo.payment}</p>
+                                    <p type="text" className="form-control-static"></p>
                                 </div>
                             </div>
-                            <div className="col-md-12">
-                                <table className="table table-striped table-bordered table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th width="15%">商品图片</th>
-                                            <th width="40%">商品信息</th>
-                                            <th width="15%">单价</th>
-                                            <th width="15%">数量</th>
-                                            <th width="15%">合计</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {
-                                            productList.map((product, index) => {
-                                                return (
-                                                    <tr key={index}>
-                                                        <td>
-                                                            <img className="p-img" src={this.state.orderInfo.imageHost + product.productImage} alt={product.productName}/>
-                                                        </td>
-                                                        <td>{product.productName}</td>
-                                                        <td>￥{product.currentUnitPrice}</td>
-                                                        <td>{product.quantity}</td>
-                                                        <td>￥{product.totalPrice}</td>
-                                                    </tr>
-                                                )
-                                            })
-                                        }
-                                    </tbody>
-                                </table>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

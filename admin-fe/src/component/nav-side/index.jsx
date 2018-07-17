@@ -29,12 +29,14 @@ const SideNav = React.createClass({
                         <li>
                             <Link>
                                 <i className="fa fa-bar-chart-o fa-fw"></i>
-                                <span>商品</span>
+                                <span>健康产品</span>
                             </Link>
                             <ul className="nav nav-second-level collapse in">
+                              
                                 <li>
-                                    <Link to="/product" activeClassName="active">商品管理</Link>
+                                    <Link to="/product" activeClassName="active">健康产品管理</Link>
                                 </li>
+                                
                                 <li>
                                     <Link to="/product.category" activeClassName="active">品类管理</Link>
                                 </li>
@@ -55,30 +57,19 @@ const SideNav = React.createClass({
                         <li>
                             <Link>
                                 <i className="fa fa-wrench fa-fw"></i>
-                                <span>评论</span>
+                                <span>用户管理</span>
                             </Link>
                             <ul className="nav nav-second-level collapse in">
                                 <li>
-                                    <Link to="/comment" activeClassName="active">评论管理</Link>
+                                    <Link to="/order" activeClassName="active">业务经办人</Link>
+                                </li>
+                                <li>
+                                    <Link to="/order" activeClassName="active">零售终端用户</Link>
                                 </li>
                             </ul>
                         </li>
 
-
-                        <li>
-                            <Link>
-                                <i className="fa fa-wrench fa-fw"></i>
-                                <span>健康产品管理</span>
-                            </Link>
-                            <ul className="nav nav-second-level collapse in">
-                                <li>
-                                    <Link to="/comment" activeClassName="active">产品信息</Link>
-                                </li>
-                            </ul>
-                           
-                        </li>
-
-
+                      
                         <li>
                             <Link>
                                 <i className="fa fa-wrench fa-fw"></i>

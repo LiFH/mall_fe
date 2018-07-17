@@ -64,8 +64,8 @@ render(
             {/* comment */} 
             <Route path="comment" component={Layout}>
                 <IndexRedirect to="index" />
-                <Route path="index" component={OrderList}/>
-                <Route path="detail/:orderNumber" component={OrderDetail}/>
+                <Route path="index" component={CommentList}/>
+                <Route path="detail/:CommentNumber" component={CommentDetail}/>
             </Route>
 
             {/* order */} 

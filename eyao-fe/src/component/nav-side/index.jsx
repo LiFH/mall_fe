@@ -23,23 +23,69 @@ const SideNav = React.createClass({
                         <li>
                             <IndexLink to="/home" activeClassName="active">
                                 <i className="fa fa-dashboard fa-fw"></i>
-                                <span>Home</span>
+                                <span>主页</span>
                             </IndexLink>
                         </li>
+
                         <li>
                             <Link>
                                 <i className="fa fa-bar-chart-o fa-fw"></i>
-                                <span>商品</span>
+                                <span>用户</span>
                             </Link>
                             <ul className="nav nav-second-level collapse in">
                                 <li>
-                                    <Link to="/product" activeClassName="active">商品管理</Link>
+                                    <Link to="/user" activeClassName="active">经销商管理</Link>
                                 </li>
                                 <li>
-                                    <Link to="/product.category" activeClassName="active">品类管理</Link>
+                                    <Link to="/product.category" activeClassName="active">业务经办人</Link>
+                                </li>
+                                <li>
+                                    <Link to="/product.category" activeClassName="active">零售终端用户</Link>
                                 </li>
                             </ul>
                         </li>
+
+
+                        <li>
+                            <Link>
+                                <i className="fa fa-bar-chart-o fa-fw"></i>
+                                <span>健康产品管理</span>
+                            </Link>
+                            <ul className="nav nav-second-level collapse in">
+                                <li>
+                                    <Link to="/product" activeClassName="active">健康商品上下架</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" activeClassName="active">销售信息管理</Link>
+                                </li>
+                              
+                                <li>
+                                    <Link to="/product.category" activeClassName="active">销售规则管理</Link>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <Link>
+                                <i className="fa fa-bar-chart-o fa-fw"></i>
+                                <span>促销管理</span>
+                            </Link>
+                            <ul className="nav nav-second-level collapse in">
+                                <li>
+                                    <Link to="/" activeClassName="active">广告促销管理</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" activeClassName="active">促销规则管理</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" activeClassName="active">促销活动管理</Link>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        
+
                         <li>
                             <Link>
                                 <i className="fa fa-wrench fa-fw"></i>
@@ -65,18 +111,7 @@ const SideNav = React.createClass({
                         </li>
 
 
-                        <li>
-                            <Link>
-                                <i className="fa fa-wrench fa-fw"></i>
-                                <span>健康产品管理</span>
-                            </Link>
-                            <ul className="nav nav-second-level collapse in">
-                                <li>
-                                    <Link to="/comment" activeClassName="active">产品信息</Link>
-                                </li>
-                            </ul>
-                           
-                        </li>
+                       
 
 
                         <li>
@@ -118,11 +153,15 @@ const SideNav = React.createClass({
                         <li>
                             <Link>
                                 <i className="fa fa-wrench fa-fw"></i>
-                                <span>交易撮合</span>
+                                <span>审批工作流</span>
                             </Link>
                             <ul className="nav nav-second-level collapse in">
+
                                 <li>
-                                    <Link to="/comment" activeClassName="active">买家信用资料</Link>
+                                    <Link to="/comment" activeClassName="active">下架审批</Link>
+                                </li>
+                                <li>
+                                    <Link to="/comment" activeClassName="active">在线审批</Link>
                                 </li>
                             </ul>
                             

@@ -109,48 +109,18 @@ const OrderList = React.createClass({
                         <table className="table table-striped table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    <th>评论号</th>
+                                    <th>评论ID</th>
                                     <th>评论人</th>
-                                    <th>商品</th>
+                                    <th>商品ID</th>
                                     <th>是否通过评审</th>
                                     <th>创建时间</th>
                                     <th>操作</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                {
-                                    this.state.list.length ? this.state.list.map((order, index) => {
-                                        return (
-                                            <tr key={index}>
-                                                <td>
-                                                    <Link className="opear" to={ '/order/detail/' + order.orderNo}>{order.orderNo}</Link>
-                                                </td>
-                                                <td>{order.receiverName}</td>
-                                                <td>{order.statusDesc}</td>
-                                                <td>￥{order.payment}</td>
-                                                <td>{order.createTime}</td>
-                                                <td>
-                                                    <Link className="opear" to={ '/order/detail/' + order.orderNo}>查看</Link>
-                                                </td>
-                                            </tr>
-                                        );
-                                    }) :
-                                    (
-                                        <tr>
-                                            <td colSpan="6" className="text-center">没有找到相应结果~</td>
-                                        </tr>
-                                    )
-                                }
-                                            
-                            </tbody>
+                            
                         </table>
                     </div>
-                    {
-                    this.state.pages > 1 ? <Pagination onChange={this.onPageNumChange} 
-                        current={this.state.pageNum} 
-                        total={this.state.total} 
-                        showLessItems/>: null
-                    }
+                  
                 </div>
             </div>
         );
