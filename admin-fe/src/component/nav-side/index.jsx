@@ -61,7 +61,7 @@ const SideNav = React.createClass({
                             </Link>
                             <ul className="nav nav-second-level collapse in">
                                 <li>
-                                    <Link to="/order" activeClassName="active">业务经办人</Link>
+                                    <Link to="/user" activeClassName="active">业务经办人</Link>
                                 </li>
                                 <li>
                                     <Link to="/order" activeClassName="active">零售终端用户</Link>

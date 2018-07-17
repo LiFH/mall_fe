@@ -25,13 +25,21 @@ var nav = {
             _mm.doLogin();
         });
         $('.js-login1').click(function(){
-           window.location.href = './user-register.html';
+           //window.location.href = './user-register.html';
+           window.location.href="http://admin.lifh.xin/#/login"
+
         });
         $('.js-login2').click(function(){
             _mm.doLogin2();
         });
         // 注册点击事件
         $('.js-register').click(function(){
+            window.location.href = './user-register.html';
+        });
+        $('.js-register1').click(function(){
+            window.location.href = './user-register.html';
+        });
+        $('.js-register2').click(function(){
             window.location.href = './user-register.html';
         });
         // 退出点击事件
