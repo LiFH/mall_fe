@@ -20,7 +20,7 @@ var config = {
     // path && publickPath
     output: {
         path        : __dirname + '/dist/',
-        publicPath  : WEBPACK_ENV === 'online' ? '//s.lifh.xin/admin-fe/dist/' : '/dist/',
+        publicPath  : WEBPACK_ENV === 'online' ? '//s.lifh.xin/eyao-fe/dist/' : '/dist/',
         filename    : 'js/[name].js'
     },
     resolve: {
@@ -77,7 +77,7 @@ var config = {
         // html 加载
         new HtmlWebpackPlugin({
             filename        : 'view/index.html',
-            title           : '经销商管理',
+            title           : '运营管理',
             template        : './src/index.html',
             favicon         : './favicon.ico',
             inject          : true,
