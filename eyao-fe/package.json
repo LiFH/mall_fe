@@ -1,7 +1,7 @@
 {
-  "name": "mmall_admin_fe",
+  "name": "mmall_eyao_fe",
   "version": "1.0.0",
-  "description": "admin.lifh.xin",
+  "description": "eyao.lifh.xin",
   "main": "index.js",
   "scripts": {
     "dev": "WEBPACK_ENV=dev webpack-dev-server --port 8086 --inline",
